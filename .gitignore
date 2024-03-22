@@ -1,26 +1,15 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Venv - ambiente virtual
-venv/
+# Arquivos de byte compilados do Python
+__pycache__/
+
+# Arquivos de ambiente
 .env
-.venv
+.env/ 
 env/
-commit_editmsg
+ENV
+env.back/
+venv.back
+
+# Diretório de ambiente virtual
+venv/
+
