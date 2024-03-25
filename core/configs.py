@@ -21,7 +21,8 @@ class Settings(BaseSettings):
 
     API_V1_STR: str = '/api/v1'
     BD_URL: str = f'postgresql+asyncpg://{db_user}:{db_senha}@{db_host}:5432/{db_nome}'
-    DBBaseModel = declarative_base()
+    DBBaseModel: DeclarativeMeta = declarative_base()
+
 
     class config:
         case_sensitive =True
