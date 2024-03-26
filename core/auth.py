@@ -50,3 +50,10 @@ def criar_token(tipo_token: str,
     payload["sub"] = str(sub) 
 
     return jwt.encode(payload, settings.JWT_SECRET, algorithm=settings.ALGORITHM)
+
+def criar_token_acesso( sub:str) ->str:
+    return criar_token(
+        tipo_token= 'acess_token',
+        tempo_vida=timedelta(minutes=settings.ACCESS_TOKEN_EXPIRE_MINUTES),
+        sub= sub
+    )
